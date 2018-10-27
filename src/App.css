@@ -1,0 +1,1389 @@
+@import url(https://fonts.google.com/specimen/Open+Sans);
+@import url(https://fonts.google.com/specimen/Playfair+Display);
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~react-alice-carousel/lib/alice-carousel.css";
+
+.App {
+  text-align: center;
+  /* margin: 0 3.125%; */
+}
+
+.Macys-header {
+  margin: 0 3.125%;
+}
+
+.med-header, .small-header {
+  display: none;
+}
+
+@media screen and (max-width: 1111px) {
+  .legal {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .Macys-header {
+    margin: 0 0 0 3%;
+  }
+
+  .large-header {
+    display: none;
+  }
+
+  .med-header {
+    display: block;
+    padding-top: 3%;
+    /* white-space: nowrap; */
+    /* justify-content: center; */
+  }
+
+  .small-header {
+    display: none;
+  }
+
+  .hero1 {
+    content:url("./assets/hero/med-banner1.png");
+  }
+
+  .hero2 {
+    content:url("./assets/hero/med-banner2.png");
+  }
+
+  .hero3 {
+    content:url("./assets/hero/med-banner3.png");
+  }
+
+  .title_bold {
+    font-size: 16px !important;
+  }
+
+  .edit_subtitle {
+    font-size: 12px;
+  }
+
+  #edit1 {
+    padding-right: 18px !important;
+  }
+
+  #edit2 {
+    padding-left: 18px !important;
+  }
+
+  #edit3 {
+    padding-top: 30px !important;
+  }
+
+  .select_header {
+    padding-top: 60px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .text_line {
+    bottom: 28px !important;
+  }
+
+  .line_title {
+    font-size: 18px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .line_subtitle {
+    font-size: 14px !important;
+  }
+
+  .personalize {
+    padding-top: 40px !important;
+    padding-bottom: 100px !important;
+  }
+
+  .person_img img {
+    content:url("./assets/personalize/med-breakpoint-personalize-banner.png");
+  }
+
+  #first_modal {
+    content:url("./assets/modals/small-modal.jpg");
+  }
+
+  #second_modal {
+    content:url("./assets/modals/small-plate-modal.jpg");
+  }
+
+  #third_modal {
+    content:url("./assets/modals/small-dress-modal.jpg");
+  }
+
+  #fourth_modal {
+    content:url("./assets/modals/small-shoes-modal.jpg");
+  }
+
+  #fifth_modal {
+    content:url("./assets/modals/small-red-modal.jpg");
+  }
+
+  #footer-redesign-row-2 {
+    text-align: left;
+  }
+
+  li.title {
+    position: relative;
+    display: inline;
+    margin-right: auto;
+    float: left;
+    top: -5px;
+    letter-spacing: 0.5px;
+  }
+
+  .plusminus-icon {
+    position: relative;
+    display: inline !important;
+    font-weight: 700;
+    float: right;
+    font-size: 16px;
+    top: -4px;
+  }
+
+  .customer-service-checkbox-item, .credit-card-checkbox-item, .our-stores-checkbox-item, .macys-inc-checkbox-item {
+    display: none;
+  }
+
+  #customerService, #creditCard, #stores, #macysinc {
+    border-bottom: 1px solid #aaa !important;
+    padding: 0 20% !important;
+  }
+
+  #footer-redesign-row-1-panels-container {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+
+  #stayconnected {
+    /* float: left; */
+    text-align: left;
+    padding: 0 20% !important;
+  }
+
+  #stayconnected a {
+    padding: 10px 0 0 0 !important;
+    letter-spacing: 0.5px;
+  }
+
+  .copyright {
+    padding: 0 5% !important;
+  }
+
+  .legal {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .ReactModal__Content {
+    height: 70% !important;
+  }
+
+  .store p {
+    font-size: 18px !important;
+  }
+
+  .store a {
+    font-size: 12px !important;
+  }
+
+  #store2 {
+    position: relative;
+    top: -8px;
+  }
+
+  #store3 {
+    position: relative;
+    top: 6px;
+  }
+}
+
+@media screen and (max-width: 580px) and (min-width: 401px) {
+  .ReactModal__Content {
+    height: 50% !important;
+  }
+
+  .store p {
+    font-size: 14px !important;
+  }
+
+  .store a {
+    font-size: 9px !important;
+  }
+
+  #store2 {
+    position: relative;
+    top: -8px;
+  }
+
+  #store3 {
+    position: relative;
+    top: 4px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 420px) {
+  .social-logo {
+    content:url("./assets/footer/Macys-social-med.png");
+    transform: translateX(-8px) !important;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 942px) {
+  .shop_bottom {
+    flex-direction: column;
+    padding-bottom: 40px !important;
+  }
+
+  .shop_text {
+    /* text-align: left;
+    padding-left: 5% !important;
+    margin-bottom: 0; */
+    font-size: 16px !important;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .brand_wrapper {
+    flex-direction: column;
+  }
+
+  .brand_wrapper img {
+    height: 22px !important;
+    padding-bottom: 14px !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 791px) {
+  .alice-carousel {
+    height: 440px !important;
+  }
+}
+
+@media only screen and (max-width: 790px) and (min-width: 621px) {
+  .alice-carousel {
+    height: 420px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Macys-header {
+    margin: 0 0 0 3%;
+  }
+
+  .large-header {
+    display: none;
+  }
+
+  .med-header {
+    display: none;
+  }
+
+  .small-header {
+    display: block;
+    /* white-space: nowrap; */
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+
+  .hero1 {
+    content:url("./assets/hero/small-banner1.png");
+  }
+
+  .hero2 {
+    content:url("./assets/hero/small-banner2.png");
+  }
+
+  .hero3 {
+    content:url("./assets/hero/small-banner3.png");
+  }
+
+  .inStore {
+    flex-direction: column;
+  }
+
+  .store {
+    width: 100% !important;
+  }
+
+  .store p {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .store a {
+    font-size: 14px !important;
+  }
+
+  #store1 {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+  }
+
+  #store2 {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  #store3 {
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .edit_text, .ins_header {
+    font-size: 18px !important;
+    padding-bottom: 2px !important;
+  }
+
+  .edit_title {
+    /* margin-top: 0 !important; */
+    margin-bottom: 10px !important;
+  }
+
+  .title_bold {
+    font-size: 17px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .edit_subtitle {
+    font-size: 13px !important;
+    line-height: 17px !important;
+  }
+
+  .first_row {
+    flex-direction: column;
+  }
+
+  #edit1 {
+    padding-right: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  #edit2 {
+    padding-left: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  #edit3 {
+    padding-top: 0 !important;
+  }
+
+  .select_header {
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .line_title {
+    font-size: 20px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .line_subtitle {
+    font-size: 14px !important;
+  }
+
+  .each_select {
+    margin-right: 10% !important;
+  }
+
+  .personalize {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  .person_img img {
+    content:url("./assets/personalize/sml-breakpoint-personalize-banner.png");
+  }
+
+  .ReactModal__Content {
+    height: 35% !important;
+  }
+
+  .shop_bottom {
+    flex-direction: column;
+    padding-top: 20px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .shop_text {
+    font-size: 16px !important;
+    text-align: center;
+    /* padding-left: 5% !important; */
+    margin-bottom: 10px;
+  }
+
+  .brand_wrapper {
+    flex-direction: column;
+  }
+
+  .brand_wrapper img {
+    height: 28px !important;
+    padding-bottom: 14px !important;
+    padding-left: 0 !important;
+  }
+
+  .social-logo {
+    transform: translateX(-3%) !important;
+  }
+
+  .copyright {
+    padding: 0 10% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .alice-carousel__wrapper {
+    padding-left: 1.5% !important;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  white-space: nowrap;
+  /* padding: 0 3.125%; */
+}
+
+.med-header-wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* white-space: nowrap; */
+  justify-content: center;
+  /* flex-grow: 1; */
+  /* flex-basis: 10%; */
+}
+
+.small-header-wrapper {
+  display: flex;
+  /* white-space: nowrap; */
+}
+
+.menu-logo {
+  height: 20px;
+  width: 22px;
+  float: left;
+  cursor: pointer;
+}
+
+.Macys-logo {
+  width: 155px;
+  height: 41px;
+  /* float: left; */
+}
+
+#Macys-large {
+  padding: 2.7% 2%;
+  display: flex;
+}
+
+#Macys-med {
+  position: relative;
+  top: -3px;
+  margin: 0 auto;
+  padding-left: 6%;
+}
+
+#Macys-med img {
+  width: 120px;
+  height: 32px;
+}
+
+#small-logo {
+  display: flex;
+  margin-right: auto;
+}
+
+#Macys-small {
+  position: relative;
+  top: -3px;
+  padding-left: 8%;
+  width: 100px;
+  height: 28px;
+}
+
+#med-header-container {
+  width: 100px;
+}
+
+#small-header-container {
+  width: 100px;
+}
+
+.search-container {
+  padding-left: 2%;
+  margin: auto 0;
+  margin-right: auto;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-logo {
+  height: 20px;
+}
+
+#large-search {
+  margin-top: 5px;
+}
+
+.search {
+  margin-left: 8px;
+  border: none;
+  padding: 3px 5px;
+  width: 170px;
+  font-size: 14px;
+  font-weight: 200;
+  border-bottom: solid 1px black;
+}
+
+#large-header-container {
+  display: flex;
+  margin: auto 0;
+  /* width: 200px; */
+}
+
+.account-text {
+}
+
+.account-logo {
+  height: 20px;
+}
+
+#large-account {
+  padding-left: 10px;
+  padding-top: 11px;
+}
+
+#med-account {
+  padding-left: 16px;
+}
+
+#small-account {
+  padding-left: 10px;
+}
+
+.bag-logo {
+  position: relative;
+  height: 22px;
+}
+
+#large-bag {
+  padding-top: 9.5px;
+  padding-left: 30px;
+}
+
+#med-bag {
+  padding-left: 16px;
+  padding-right: 2%;
+}
+
+#small-bag {
+  padding-left: 10px;
+}
+
+.navbar {
+  padding: 15px 0 30px 0;
+  margin: 0;
+  /* border-bottom: solid 1px #eee; */
+}
+
+.navitem {
+  font-weight: 200;
+  color: black;
+  text-decoration: none;
+  padding: 0 3.5%;
+}
+
+.navitem:hover {
+  color: #666666;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.med_nav {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
+.small_nav {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  justify-content: center;
+  padding-bottom: 8%;
+}
+
+.med_nav a, .small_nav a {
+  padding-top: 5%;
+}
+
+.hero1 {
+  width: 100%;
+}
+
+.hero2 {
+  width: 100%;
+}
+
+.hero3 {
+  width: 100%;
+}
+
+.slick-dots {
+  bottom: 14px !important;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.hero_content {
+	padding: 10px;
+	margin: 0px;
+	font-size: 16px;
+}
+
+.hero_head {
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.hero_link a {
+  color: black;
+}
+
+.Macys-body {
+  padding: 0 3.125%;
+}
+
+.inStore {
+  padding: 5% 0;
+  display: flex;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+}
+
+.store img {
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.store p {
+  font-size: 20px;
+}
+
+.store a {
+  color: black;
+}
+
+#store1 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 15%; */
+}
+
+#store2 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 8%; */
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#store3 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  /* float: right;
+  padding-right: 15%; */
+}
+
+#store3 img {
+  position: relative;
+  width: 48px;
+  bottom: 4px;
+}
+
+.title_bold {
+  font-weight: bold;
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  margin-bottom: -5px;
+}
+
+.edit_text {
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.first_row, .second_row {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.edit_para {
+  flex-grow: 1;
+  flex-basis: 10%;
+  max-width: 620px;
+  /* max-height: 750px; */
+}
+
+.edit_para img {
+  width: 100%;
+}
+
+.edit_title {
+  text-align: left;
+  /* width: 550px; */
+}
+
+#edit1 {
+  padding-right: 25px;
+}
+
+#edit2 {
+  padding-left: 25px;
+}
+
+#edit3 {
+  padding-top: 50px;
+  width: 1174px;
+  flex-grow: 1;
+  flex-basis: 10%;
+}
+
+#edit3 img {
+  width: 100%;
+}
+
+/* .tall {
+  height: 750px;
+} */
+
+.short {
+  width: 1174px;
+}
+
+/* .tall, .short {
+  position: relative;
+} */
+
+.fashion_wrapper, .beauty_wrapper, .home_wrapper {
+  position: relative;
+}
+
+.tag_button1, .tag_button2, .tag_button3, .tags {
+  position: absolute;
+  background: white;
+  border: 0.5px solid #ccc;
+  /* display: inline-flex; */
+  display: flex;
+  cursor: pointer;
+}
+
+.hover1, .hover2, .hover3 {
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+#start_tag1 {
+  width: 150px;
+  height: 34px;
+  left: 3%;
+  bottom: 2%;
+}
+
+#close_tag1 {
+  width: 80px;
+  height: 34px;
+  left: 3%;
+  bottom: 2%;
+}
+
+#start_tag2 {
+  width: 150px;
+  height: 34px;
+  left: 3%;
+  bottom: 2%;
+}
+
+#close_tag2 {
+  width: 80px;
+  height: 34px;
+  left: 3%;
+  bottom: 2%;
+}
+
+#start_tag3 {
+  width: 150px;
+  height: 34px;
+  left: 1.5%;
+  bottom: 2%;
+}
+
+#close_tag3 {
+  width: 80px;
+  height: 34px;
+  left: 1.5%;
+  bottom: 2%;
+}
+
+.open_tag {
+  height: 22px;
+  width: 22px !important;
+  padding: 7px 0 6px 8px;
+}
+
+.tag_text {
+  position: relative;
+  font-size: 16px;
+  top: -7px;
+  left: 4px;
+  /* padding: 6px; */
+}
+
+.hidden {
+  display: none;
+}
+
+.nodisplay {
+  visibility: hidden;
+}
+
+.tags {
+  height: 18px;
+  width: 18px !important;
+  border-radius: 50%;
+  padding: 8px;
+  opacity: 0.9;
+}
+
+#tag1_1 {
+  left: 60%;
+  bottom: 40%;
+}
+
+#tag1_2 {
+  left: 43%;
+  bottom: 76%;
+}
+
+#tag1_3 {
+  left: 30%;
+  bottom: 90%;
+}
+
+#tag2_1 {
+  left: 28%;
+  bottom: 30%;
+}
+
+#tag2_2 {
+  left: 26%;
+  bottom: 40%;
+}
+
+#tag2_3 {
+  left: 72%;
+  bottom: 20%;
+}
+
+#tag2_4 {
+  left: 80%;
+  bottom: 44%;
+}
+
+#tag2_5 {
+  left: 60%;
+  bottom: 50%;
+}
+
+#tag2_6 {
+  left: 30%;
+  bottom: 62%;
+}
+
+#tag3_1 {
+  left: 16%;
+  bottom: 60%;
+}
+
+#tag3_2 {
+  left: 35%;
+  bottom: 47%;
+}
+
+#tag3_3 {
+  left: 20%;
+  bottom: 80%;
+}
+
+#tag3_4 {
+  left: 90%;
+  bottom: 67%;
+}
+
+#tag3_5 {
+  left: 80%;
+  bottom: 30%;
+}
+
+#tag3_6 {
+  left: 52%;
+  bottom: 84%;
+}
+
+@media screen and (max-width: 1023px) {
+  .tag_text {
+    font-size: 12px !important;
+  }
+
+  .tag_button1 p, .tag_button2 p {
+    top: -8px !important;
+  }
+
+  .open_tag {
+    height: 14px;
+    width: 14px !important;
+    padding: 5px 0 4px 6px;
+  }
+
+  #start_tag1, #start_tag2, #start_tag3 {
+    width: 110px !important;
+    height: 22px !important;
+  }
+
+  #close_tag1, #close_tag2, #close_tag3 {
+    width: 60px !important;
+    height: 22px !important;
+  }
+
+  .tags {
+    height: 14px;
+    width: 14px !important;
+    border-radius: 50%;
+    padding: 5px;
+    opacity: 0.9;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .tag_text {
+    font-size: 10px !important;
+  }
+
+  .tag_button3 p {
+    top: -7.5px !important;
+  }
+
+  .open_tag {
+    height: 12px;
+    width: 12px !important;
+    padding: 4px 0 2px 4px;
+  }
+
+  #start_tag1, #start_tag2, #start_tag3 {
+    width: 92px !important;
+    height: 18px !important;
+  }
+
+  #start_tag3, #close_tag3 {
+    left: 1.5%;
+    bottom: 4%;
+  }
+
+  #close_tag1, #close_tag2, #close_tag3 {
+    width: 50px !important;
+    height: 19px !important;
+  }
+
+  .tags {
+    height: 9px;
+    width: 9px !important;
+    border-radius: 50%;
+    padding: 3px;
+    opacity: 0.9;
+  }
+
+  .alice-carousel {
+    height: 400px !important;
+  }
+
+  .alice-carousel__wrapper {
+    padding-left: 8% !important;
+  }
+
+}
+
+.select_header {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 75px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line-wrapper {
+  flex-grow: 1;
+  flex-basis: 10%;
+  max-width: 580px;
+  /* width: 545px; */
+  /* padding: 0 5%; */
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+}
+
+.text_line {
+  position: relative;
+  padding: 0 3%;
+  bottom: 32px;
+}
+
+.line_title {
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+}
+
+.line_subtitle {
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.alice-carousel {
+  padding: 0 3% !important;
+}
+
+.alice-carousel__wrapper {
+  border: none !important;
+  height: 500px !important;
+  /* transform: translateX(1%) !important; */
+  padding-left: 1%;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1025px) {
+  .alice-carousel__wrapper {
+    height: 420px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  /* .alice-carousel__wrapper {
+    padding-left: 5%;
+  } */
+
+  .close {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* .alice-carousel__wrapper {
+    padding-left: 10%;
+  } */
+
+  .close {
+    width: 7px !important;
+    height: 7px !important;
+  }
+}
+
+.alice-carousel__prev-btn, .alice-carousel__next-btn {
+  top: 38% !important;
+}
+
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+  border: none !important;
+  color: black !important;
+  transform: scale(1.5) !important;
+}
+
+.each_select {
+  flex-grow: 1;
+  flex-basis: 10%;
+  max-width: 280px;
+  margin-right: 2%;
+}
+
+.each_select img {
+  /* width: 280px; */
+  width: 100%;
+}
+
+.each_select:hover {
+  cursor: pointer;
+  /* width: 290px; */
+  transform: scale(1.02);
+  box-shadow: 2px 2px 10px 0 rgba(164, 164, 164, 0.5);
+}
+
+/* .each_select:hover img {
+  width: 290px;
+} */
+
+.text_wrapper {
+  text-align: left;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  font-size: 14px;
+}
+
+.legend {
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.secondText {
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.price {
+  color: #cc0000;
+}
+
+.old_price {
+  color: black;
+}
+
+.personalize {
+  padding: 150px 5%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.person_img {
+  flex-grow: 1;
+  flex-basis: 10%;
+  max-width: 1182px;
+}
+
+.person_img img {
+  width: 100%;
+}
+
+.instagram {
+  padding: 0 3%;
+}
+
+.ins_header {
+  text-align: center;
+  font-size: 16px;
+}
+
+.ins_header a {
+  color: black;
+  font-size: 14px;
+}
+
+.floated_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.floated_img a {
+  flex-grow: 1;
+  flex-basis: 120px;
+  max-width: 420px;
+  padding: 10px;
+}
+
+.floated_img a img {
+  width: 100%;
+}
+
+.floated_img img:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.shop_bottom {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  /* white-space: nowrap; */
+  /* justify-content: space-between; */
+  justify-content: center;
+  transform: translateX(-2%);
+  padding: 0 5%;
+}
+
+.brand_wrapper {
+  display: flex;
+}
+
+.brand_wrapper img {
+  flex-grow: 1;
+  height: 16px;
+  padding-left: 150px;
+  /* width: 100%; */
+}
+
+.shop_text {
+  position: relative;
+  top: -15px;
+  display: inline;
+  font-size: 14px;
+}
+
+.ins {
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  flex-grow: 1;
+  display: inline;
+  /* max-width: 540px;
+  flex-grow: 1; */
+  /* display: flex;
+  justify-content: center; */
+  max-width: 540px;
+  /* height: 540px; */
+}
+
+.modal_img {
+  width: 100%;
+  margin: 0 auto;
+  /* margin: 0 1%; */
+}
+
+.close {
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  float: right;
+  padding-bottom: 5px;
+}
+
+.Macys-footer {
+  margin: 0 6% 1.5% 6%;
+  font-size: 12px;
+}
+
+#footerFlag {
+  width: 20px;
+  height: 14px;
+  padding-right: 2px;
+}
+
+.plusminus-icon {
+  display: none;
+}
+
+#footer-redesign-row-1, #footer-redesign-row-2 {
+  border-top: 1px solid #aaa;
+}
+
+#footer-redesign-row-2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5%;
+}
+
+#footer-redesign-row-1-panels-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5% 4%;
+}
+
+#footer-redesign-row-1-panels-container ul li {
+    line-height: 1.625em;
+    list-style: none!important;
+    text-align: left;
+}
+
+li.title, a.title, .text {
+  font-weight: 700;
+  font-size: 14px !important;
+}
+
+.Macys-footer a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer-redesign-row-1-panels-container ul {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#stayconnected {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  padding-left: 7%;
+}
+
+#stayconnected a {
+  padding-left: 7%;
+}
+
+#stayconnected img {
+  width: 240px;
+  transform: translateX(3%);
+}
+
+.copyright {
+  padding: 0;
+}
+
+.copyright p {
+  margin-top: 7px;
+}
+
+.legal {
+  margin-top: -6px;
+  display: flex;
+  justify-content: center;
+}
+
+.legal a {
+  padding: 4px;
+}

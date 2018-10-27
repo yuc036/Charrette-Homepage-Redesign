@@ -1,6 +1,7 @@
 # Charrette-Homepage-Redesign
 
-- Navigate to `/charrette-hompage-redesign`
+## Run locally
 - Run `npm start`
 
-- Heroku Access: https://charrette-homepage-redesign.herokuapp.com/
+## Heroku Access
+- https://charrette-homepage-redesign.herokuapp.com/
