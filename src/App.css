@@ -7,7 +7,8 @@
 
 .App {
   text-align: center;
-  /* margin: 0 3.125%; */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .Macys-header {
@@ -264,12 +265,16 @@
 @media only screen and (max-width: 900px) and (min-width: 791px) {
   .alice-carousel {
     height: 440px !important;
+    width: auto !important;
+    margin: 0 3% !important;
   }
 }
 
 @media only screen and (max-width: 790px) and (min-width: 621px) {
   .alice-carousel {
     height: 420px !important;
+    width: auto !important;
+    margin: 0 3% !important;
   }
 }
 
@@ -606,7 +611,7 @@
   font-weight: 200;
   color: black;
   text-decoration: none;
-  padding: 0 3.5%;
+  padding: 0 3%;
 }
 
 .navitem:hover {
@@ -675,6 +680,10 @@
 }
 
 .Macys-body {
+  /* padding: 0 3.125%; */
+}
+
+.inStore, .edit, .personalize, .instagram {
   padding: 0 3.125%;
 }
 
@@ -1041,12 +1050,13 @@
 
   .alice-carousel {
     height: 400px !important;
+    width: auto !important;
+    margin: 0 3% !important;
   }
 
   .alice-carousel__wrapper {
     padding-left: 8% !important;
   }
-
 }
 
 .select_header {
@@ -1094,6 +1104,8 @@
 
 .alice-carousel {
   padding: 0 3% !important;
+  width: auto !important;
+  margin: 0 3% !important;
 }
 
 .alice-carousel__wrapper {
@@ -1132,7 +1144,18 @@
 }
 
 .alice-carousel__prev-btn, .alice-carousel__next-btn {
-  top: 38% !important;
+  position: absolute;
+  top: 30% !important;
+  left: 0% !important;
+  width: 100% !important;
+}
+
+.alice-carousel__prev-btn {
+  text-align: start !important;
+}
+
+.alice-carousel__next-btn {
+  text-align: end !important;
 }
 
 .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {

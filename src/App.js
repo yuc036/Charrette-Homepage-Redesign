@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import Modal from 'react-modal';
 import Slider from "react-slick";
 import AliceCarousel from 'react-alice-carousel';
-import Modal from 'react-modal';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 import head from './assets/icons/macys.png';
 
@@ -238,7 +239,7 @@ class App extends Component {
   responsive = {
     0: { items: 1 },
     360: { items: 2 },
-    620: {items: 3 },
+    720: {items: 3 },
     1024: { items: 4 }
   };
 
@@ -251,7 +252,101 @@ class App extends Component {
       slidesToScroll: 1
     };
 
-    const handleOnDragStart = e => e.preventDefault();
+    const handleDragStart = (e) => e.preventDefault();
+ 
+    const select_items = [
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img1} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">JAX</p>
+          <p className="secondText">Off-The-Shoulder Lace Dress</p>
+          <p className="price"><s className="old_price">$138</s> $79.99</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img2} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">JAX</p>
+          <p className="secondText">Mixed Lace & Embroidered...</p>
+          <p className="old_price">$68.99</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img3} className="yours-custom-class" alt="carousel" onClick={this.openModal3} />
+        <div className="text_wrapper">
+          <p className="legend">BARDOT</p>
+          <p className="secondText">Lace Illusion Halter Dress</p>
+          <p className="old_price">$119</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img4} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">STYLE & CO</p>
+          <p className="secondText">Petite Cross-Back Printed Swing...</p>
+          <p className="price"><s className="old_price">$49.50</s> $37.12</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img5} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">RALPH LAUREN</p>
+          <p className="secondText">Ruffled Overlay V-back Sheath Dress</p>
+          <p className="old_price"><s className="old_price">$130</s> $79.99</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img6} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">GUESS</p>
+          <p className="secondText">Dayana Eyelet-Lace High-Low Dres</p>
+          <p className="old_price"><s className="old_price">$90</s> $49.99</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel_img7} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">VINCE CAMUTO</p>
+          <p className="secondText">Off-The-Shoulder Flounced Crepe Dress</p>
+          <p className="old_price">$119</p>
+        </div>
+      </div>
+    ];
+
+    const bottom_items = [
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel2_img1} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">MICHAEL KORS</p>
+          <p className="secondText">Damita Platform Wedge Sandals</p>
+          <p className="price"><s className="old_price">$99</s> $79.99</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel2_img2} className="yours-custom-class" alt="carousel" onClick={this.openModal4} />
+        <div className="text_wrapper">
+          <p className="legend">STEVE MADDEN</p>
+          <p className="secondText">Women&rsquo;s Kimmie Flatform...</p>
+          <p className="old_price">$69.99</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel2_img3} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">VINCE CAMUTO</p>
+          <p className="secondText">Off-The-Shoulder Tassel-Detail Top</p>
+          <p className="price"><s className="old_price">$99</s> $39.53</p>
+        </div>
+      </div>,
+      <div onDragStart={handleDragStart} className="each_select">
+        <img src={carousel2_img4} className="yours-custom-class" alt="carousel" />
+        <div className="text_wrapper">
+          <p className="legend">XSCAPE</p>
+          <p className="secondText">Ruffled High-Low Dress</p>
+          <p className="old_price">$179</p>
+        </div>
+      </div>
+    ];
 
     var customStyles = {
       overlay : {
@@ -484,70 +579,7 @@ class App extends Component {
                 <img src={line} className="line" alt="line" />
               </div>
             </div>
-            <AliceCarousel
-              mouseDragEnabled
-              dotsDisabled={true}
-              responsive={this.responsive}
-              fadeOutAnimation={true}
-              infinite={false}
-              className="AliceCarousel">
-              <div className="each_select">
-                <img src={carousel_img1} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">JAX</p>
-                  <p className="secondText">Off-The-Shoulder Lace Dress</p>
-                  <p className="price"><s className="old_price">$138</s> $79.99</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel_img2} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">JAX</p>
-                  <p className="secondText">Mixed Lace & Embroidered...</p>
-                  <p className="old_price">$68.99</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel_img3} className="yours-custom-class" alt="carousel" onClick={this.openModal3} />
-                <div className="text_wrapper">
-                  <p className="legend">BARDOT</p>
-                  <p className="secondText">Lace Illusion Halter Dress</p>
-                  <p className="old_price">$119</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel_img4} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">STYLE & CO</p>
-                  <p className="secondText">Petite Cross-Back Printed Swing...</p>
-                  <p className="price"><s className="old_price">$49.50</s> $37.12</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel_img5} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">RALPH LAUREN</p>
-                  <p className="secondText">Ruffled Overlay V-back Sheath Dress</p>
-                  <p className="old_price"><s className="old_price">$130</s> $79.99</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel_img6} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">GUESS</p>
-                  <p className="secondText">Dayana Eyelet-Lace High-Low Dres</p>
-                  <p className="old_price"><s className="old_price">$90</s> $49.99</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel_img7} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">VINCE CAMUTO</p>
-                  <p className="secondText">Off-The-Shoulder Flounced Crepe Dress</p>
-                  <p className="old_price">$119</p>
-                </div>
-              </div>
-            </AliceCarousel>
+            <AliceCarousel mouseTracking items={select_items} controlsStrategy="responsive" responsive={this.responsive} disableDotsControls={true} animationType="fadeout" />
           </div>
 
           <div className="personalize">
@@ -584,46 +616,7 @@ class App extends Component {
                 <img src={line} className="line" alt="line" />
               </div>
             </div>
-            <AliceCarousel
-              mouseDragEnabled
-              dotsDisabled={true}
-              responsive={this.responsive}
-              fadeOutAnimation={true}
-              infinite={false}
-              className="AliceCarousel">
-              <div className="each_select">
-                <img src={carousel2_img1} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">MICHAEL KORS</p>
-                  <p className="secondText">Damita Platform Wedge Sandals</p>
-                  <p className="price"><s className="old_price">$99</s> $79.99</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel2_img2} className="yours-custom-class" alt="carousel" onClick={this.openModal4} />
-                <div className="text_wrapper">
-                  <p className="legend">STEVE MADDEN</p>
-                  <p className="secondText">Women&rsquo;s Kimmie Flatform...</p>
-                  <p className="old_price">$69.99</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel2_img3} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">VINCE CAMUTO</p>
-                  <p className="secondText">Off-The-Shoulder Tassel-Detail Top</p>
-                  <p className="price"><s className="old_price">$99</s> $39.53</p>
-                </div>
-              </div>
-              <div className="each_select">
-                <img src={carousel2_img4} className="yours-custom-class" alt="carousel" />
-                <div className="text_wrapper">
-                  <p className="legend">XSCAPE</p>
-                  <p className="secondText">Ruffled High-Low Dress</p>
-                  <p className="old_price">$179</p>
-                </div>
-              </div>
-            </AliceCarousel>
+            <AliceCarousel mouseTracking items={bottom_items} controlsStrategy="responsive" responsive={this.responsive} disableDotsControls={true} animationType="fadeout" />
           </div>
 
           <div className="shop_bottom">
